@@ -65,3 +65,8 @@ packages = [
     "summarizer",
     "tui",
 ]
+
+[tool.pytest.ini_options]
+markers = [
+    "e2e: end-to-end P2P integration test (real loopback sockets + mDNS); deselect with -m 'not e2e'",
+]

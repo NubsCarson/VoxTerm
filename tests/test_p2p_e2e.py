@@ -98,7 +98,7 @@ class SimNode:
 
 # ── test runner ───────────────────────────────────────────────
 
-class TestResult:
+class E2EResult:
     def __init__(self):
         self.tests: list[tuple[str, bool, str]] = []
 
@@ -127,7 +127,7 @@ def run_tests():
     print("=" * 60)
     print()
 
-    results = TestResult()
+    results = E2EResult()
     code = generate_session_code()
     alice = SimNode("alice", "aaaa1111aaaa1111")
     bob = SimNode("bob", "bbbb2222bbbb2222")
