@@ -41,3 +41,6 @@ result
 
 # Claude Code local session state
 .claude/
+
+# segmentation eval fixtures (drop real WAVs locally; do not commit)
+tests/seg_fixtures/*.wav
